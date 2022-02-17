@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Yearly-Budget-List</title>
+    <title>Yearly-Budget-List</title>
     <!-- bootstrap style sheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom style sheet -->
@@ -14,11 +14,62 @@
 
 <body>
     <header>
-        <h1 class="text-center mt-4 text-warning">My Yearly <span id="header-title">Budget List!!!</span></h1>
-
+        <h1 class="text-center mt-4 mb-4 text-warning">Yearly <span id="header-title">Budget List!!!</span></h1>
 
     </header>
     <main>
+        <section>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-2" src="images/banner-image.jpg" alt="">
+
+                    </div>
+                    <div class="col-lg-6 bg">
+                        <form action="">
+                            <h2>Income</h2>
+                            <div class="row g-3 align-items-center">
+                                <div class="col-lg-2">
+                                    <label for="inputIncome" class="col-form-label">Income</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" id="inputIncome" placeholder="Total Amount of Income">
+                                </div>
+
+                                <h2>Expenses</h2>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-lg-2">
+                                        <label for="inputFood" class="col-form-label">Food</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="inputFood" placeholder="Cost of Foods">
+                                    </div>
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-lg-2">
+                                            <label for="inputRent" class="col-form-label">Rent</label>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input type="text" id="inputRent" placeholder="Cost of Rent">
+                                        </div>
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-lg-2">
+                                                <label for="inputClothes" class="col-form-label">Clothes</label>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <input type="text" id="inputClothes" placeholder="Cost of Clothes">
+                                            </div>
+
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
     <script src="js/app.js"></script>

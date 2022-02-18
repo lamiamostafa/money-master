@@ -29,8 +29,9 @@ function calculateTotal() {
 
 function updateBalance() {
     let savingInput = getInputValue('save');
+    let newTotalIncome = totalIncome.innerText;
     let newBalance = balance.innerText;
-    let save = (newBalance * savingInput) / 100;
+    let save = (newTotalIncome * (savingInput / 100));
     if (save > newBalance) {
         return alert('Not have enough  balance to save')
     }

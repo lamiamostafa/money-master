@@ -1,14 +1,31 @@
 /* google-fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 } 
+
  #header-title{
     color:purple;
 
 } 
-#calculate-button{
+
+.banner-image{
+   
+       object-fit: cover;
+       object-position: 50% 50%;
+       height:100%;
+   
+}
+.form-bg{
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+    
+}
+.button-style{
     color:white;
     font-size:16px;
-    font-weight: 800px;
+    background-color: purple;
+    border:none;
+
 }

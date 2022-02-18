@@ -19,18 +19,18 @@
     </header>
     <main>
         <section>
-            <div class="container">
-                <div class="row g-5 col-lg-12">
-                    <div class="col-lg-6">
-                        <img class=" img-fluid rounded-2" src="images/banner-image.jpg" alt="">
+            <div class=" container">
+                <div class=" row g-5 col-lg-12">
+                    <div class="d-grid col-lg-6">
+                        <img class="banner-image img-fluid rounded-2" src="images/banner-image.jpg" alt="">
 
                     </div>
-                    <div class="col-lg-6 bg">
+                    <div class="form-bg  col-lg-6 bg">
                         <div>
-                            <h2 class="mx-5 mb-2">Income</h2>
+                            <h4 class="mx-5 pt-3 "><span id="header-title">Income</span></h4>
                             <div class="row g-3 align-items-center">
                                 <div class="col-lg-2">
-                                    <label id="error" for="inputIncome" class=" col-form-label">Income:</label>
+                                    <label for="inputIncome" class=" col-form-label">Income:</label>
                                 </div>
                                 <div class="col-lg-4">
                                     <input id="income-cost" class="bg-light" type="text" id="inputIncome"
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
 
-                            <h2 class="mx-5 mb-2">Expenses</h2>
+                            <h4 class="mx-5 mb-2 "><span id="header-title">Expenses</span></h4>
                             <div class="row g-5 align-items-center">
                                 <div class="col-lg-2">
                                     <label for="inputFood" class="col-form-label">Food:</label>
@@ -66,38 +66,34 @@
                             <div class="d-grid gap-2 col-4 mx-5 ">
 
                                 <button id="calculation"
-                                    class=" calculate-button mt-3 btn btn-primary  ">Calculate</button>
+                                    class=" button-style rounded-2 calculate-button mt-3  ">Calculate</button>
 
 
                             </div>
-                            <h5 class="mt-2 mb-3 mx-2">Total Expenses:<span id="total-expense">00</span> </h4>
-                                <h5 class="mx-4">Balance: <span id="balance">00</span> </h4>
-                                    <div class=" row g-2 align-items-center">
-                                        <div class="row-lg-4">
-                                            <label for="inputClothes" class="col-form-label">save:</label>
-                                            <input id="save-cost" class="col-lg-3" type="text" id="inputClothes"
-                                                placeholder="amount">
-                                            <p class="d-inline">%</p>
+                            <h6 class="mt-2 mb-3 mx-2">Total Expenses:<span id="total-expense">00</span> </h6>
+                            <h6 class="mx-4">Balance: <span id="balance">00</span> </h4>
+                                <div class=" row g-2 align-items-center">
+                                    <div class="row-lg-4">
+                                        <label for="inputClothes" class="col-form-label">save:</label>
+                                        <input id="save-cost" class="col-lg-3" type="text" id="inputClothes"
+                                            placeholder="saving amount">
+                                        <p class="d-inline">%</p>
 
-                                            <button id="saving-button" class=" d-inline  btn btn-primary">Save</button>
-                                        </div>
-                                        <h5 class="mt-4 mb-3 mx-2">Saving Amount: <span id="save-balance">00</span></h4>
-                                            <h5>Remaining Balance: <span id="remaining-balance">00</span></h4>
-
-
-
+                                        <button id="saving-button"
+                                            class="button-style rounded-2 d-inline  ">Save</button>
                                     </div>
+                                    <h6 class="mt-4 mb-3 mx-2">Saving Amount: <span id="save-balance">00</span>
+                                    </h6>
+                                    <h6 class="pb-3 ">Remaining Balance: <span id="remaining-balance">00</span></h6>
 
 
+
+                                </div>
 
 
                         </div>
 
                     </div>
-                    <!-- <div class="notify-section">
-                        <p id="notify-for-NaN" class="notify">❌ Please give a number</p>
-                        <p id="notify-for-negative-value" class="notify">❌ Please give a positive number</p>
-                    </div> -->
 
                 </div>
 

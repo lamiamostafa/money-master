@@ -2,7 +2,6 @@ function getInputValue(product) {
     const productInput = document.getElementById(product + '-cost');
     const productNumber = parseInt(productInput.value);
 
-
     if (isNaN(productNumber) || productNumber < 0 || productNumber == '') {
         productInput.value = '';
         return alert("Please give a positive number");
@@ -32,7 +31,6 @@ function calculateTotal() {
     document.getElementById('balance').innerText = balance;
     return balance;
 
-
 }
 
 function updateBalance() {
@@ -44,9 +42,8 @@ function updateBalance() {
     if (save > newBalance) {
         return alert('Not have enough  balance to save')
     }
-    console.log(balance, save);
-    let RemainingBalance = newBalance - save;
 
+    let RemainingBalance = newBalance - save;
 
     //update on the html
     document.getElementById('save-balance').innerText = save;

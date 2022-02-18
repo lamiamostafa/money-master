@@ -1,10 +1,12 @@
 function getInputValue(product) {
     const productInput = document.getElementById(product + '-cost');
     const productNumber = parseInt(productInput.value);
+
     if (isNaN(productNumber) || productNumber < 0 || productNumber == '') {
         productInput.value = '';
         return alert("Please give a positive number");
     }
+
     productInput.value = '';
     return productNumber;
 }
@@ -41,18 +43,12 @@ function updateBalance() {
     document.getElementById('save-balance').innerText = save;
     document.getElementById('remaining-balance').innerText = RemainingBalance;
 
-
 }
 
-
 document.getElementById('calculation').addEventListener('click', function () {
-
     calculateTotal();
-
-
 });
 
 document.getElementById('saving-button').addEventListener('click', function () {
-
     updateBalance();
 });
